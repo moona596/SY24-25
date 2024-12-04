@@ -5,8 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Wpf_dex"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="MainWindow" Height="511" Width="931">
+    <Grid Margin="10,-13,-10,13">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="33*"/>
+            <ColumnDefinition Width="47*"/>
+        </Grid.ColumnDefinitions>
+        <Image x:Name="HmmrPic" HorizontalAlignment="Left" Height="210" Margin="50,128,0,0" VerticalAlignment="Top" Width="219" Source="/hmmr_head.jpg"/>
+        <Image x:Name="TgrShrk" HorizontalAlignment="Left" Height="164" Margin="337,128,0,0" VerticalAlignment="Top" Width="211" Source="/tgr_shrk.png" Grid.ColumnSpan="2"/>
+        <Image x:Name="WhlShrk" HorizontalAlignment="Left" Height="164" Margin="241,128,0,0" VerticalAlignment="Top" Width="246" Source="/whl_shrk.jpg" Grid.Column="1"/>
+        <Button Content="Hammerhead" HorizontalAlignment="Left" Margin="50,30,0,0" VerticalAlignment="Top" Height="37" Width="91"/>
+        <Button Content="Hammerhead" HorizontalAlignment="Left" Margin="50,30,0,0" VerticalAlignment="Top" Height="37" Width="110" FontSize="16" FontFamily="Book Antiqua" Click="Button_Click"/>
+        <Button Content="Tiger Shark" HorizontalAlignment="Left" Margin="243,30,0,0" VerticalAlignment="Top" Height="37" Width="113" FontSize="16" FontFamily="Book Antiqua" Click="Button_Click_1"/>
+        <Button Grid.Column="1" Content="Whale Shark" HorizontalAlignment="Left" Margin="45,30,0,0" VerticalAlignment="Top" Width="115" Height="37" FontFamily="Book Antiqua" FontSize="16" Click="Button_Click_2"/>
+        <TextBox x:Name="Fact1" HorizontalAlignment="Left" Margin="356,317,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="Fact3" HorizontalAlignment="Left" Margin="356,401,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="Fact4" HorizontalAlignment="Left" Margin="356,443,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="Fact2" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="356,358,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+
     </Grid>
 </Window>
